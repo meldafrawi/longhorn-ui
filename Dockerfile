@@ -14,6 +14,7 @@ FROM nginx:1.20.1-alpine
 RUN apk update && \
     apk add --upgrade --no-cache curl && \
     apk add --upgrade --no-cache libxml2 && \
+    apk add --upgrade --no-cache libgcrypt && \
     apk add bash && \
     apk add gettext && \
     apk add shadow && \
